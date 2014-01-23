@@ -1313,11 +1313,11 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 		 */
 		static AnimationStyle mapIntToValue(int modeInt) {
 			switch (modeInt) {
+				case 0x1:
+					return FLIP;
 				case 0x0:
 				default:
 					return ROTATE;
-				case 0x1:
-					return FLIP;
 			}
 		}
 
